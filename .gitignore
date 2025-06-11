@@ -1,0 +1,6 @@
+node_modules
+dist
+
+# eslint-config
+.eslint-config-inspector
+src/typegen.ts
