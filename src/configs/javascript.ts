@@ -1,9 +1,9 @@
-import type { Linter } from "eslint";
+import type { Config } from "../types";
 import eslintJs from "@eslint/js";
 
-export const javascript: Linter.Config[] = [
+export const javascript: Config[] = [
   {
-    name: "zotero-plugin/javascript",
     ...eslintJs.configs.recommended,
+    name: "zotero-plugin/javascript",
   },
 ];

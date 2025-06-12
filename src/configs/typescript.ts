@@ -1,4 +1,3 @@
-import type { Linter } from "eslint";
 import type { Config } from "../types.js";
 import tseslint from "typescript-eslint";
 import { GLOB_DTS, GLOB_TS, GLOB_TSX } from "../globs.js";
@@ -19,7 +18,7 @@ export const typescriptCore = tseslint.config({
   },
 }) as Config[];
 
-export const typescript: Linter.Config[] = [
+export const typescript: Config[] = [
   ...typescriptCore,
   {
     files: [GLOB_DTS],

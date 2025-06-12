@@ -1,12 +1,11 @@
-import type { Linter } from "eslint";
+import type { Config } from "../types.js";
 import mochaPlugin from "eslint-plugin-mocha";
 import { GLOB_TEST } from "../globs.js";
 
-export const mocha: Linter.Config[] = [
+export const mocha: Config[] = [
   {
-    files: [GLOB_TEST],
-    plugins: {
-      mochaPlugin,
-    },
+    ...mochaPlugin.configs!.recommended,
+    files: [GLOB_TEST, "**/*.test.ts"],
+    name: "zotero-plugin/mocha",
   },
 ];
