@@ -1,0 +1,14 @@
+{
+  "name": "@zotero-plugin/eslint-config-playground",
+  "private": true,
+  "scripts": {
+    "inspector": "eslint-config-inspector --config eslint-inspector.config.ts"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@zotero-plugin/eslint-config": "workspace:^",
+    "chai": "^5.2.0",
+    "mocha": "^11.6.0"
+  }
+}
