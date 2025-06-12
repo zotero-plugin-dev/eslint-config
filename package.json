@@ -44,7 +44,7 @@
     "typecheck": "tsc --noEmit",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
-    "release": "bumpp -r --commit \"chore(release): publish v%s\"",
+    "release": "bumpp --commit \"chore(release): publish v%s\"",
     "update:deps": "pnpx taze minor -w -f -l -r",
     "prepare": "husky"
   },
