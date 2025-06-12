@@ -85,7 +85,7 @@ jobs:
       - name: Publish to NPM and sync to GitHub
         if: github.event_name == 'push' && github.ref_type == 'tag' && startsWith(github.ref, 'refs/tags/v')
         run: |
-          pnpm -r publish --no-git-checks
+          pnpm publish --no-git-checks
           pnpx changelogithub
         env:
           NPM_CONFIG_PROVENANCE: true
