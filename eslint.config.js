@@ -9,5 +9,8 @@ export default antfu({
     quotes: "double",
   },
   formatters: true,
-  ignores: ["src/typegen.ts"],
+  ignores: ["src/typegen.ts", "playground/**/*"],
 });
+
+// import zotero from "@zotero-plugin/eslint-config";
+// export default zotero();
