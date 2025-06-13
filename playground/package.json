@@ -1,5 +1,6 @@
 {
   "name": "@zotero-plugin/eslint-config-playground",
+  "type": "module",
   "private": true,
   "scripts": {
     "inspector": "eslint-config-inspector --config eslint-inspector.config.ts"

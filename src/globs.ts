@@ -7,7 +7,13 @@ export const GLOB_JSX = "**/*.?([cm])jsx";
 export const GLOB_TS = "**/*.?([cm])ts";
 export const GLOB_TSX = "**/*.tsx";
 export const GLOB_DTS = "**/*.d.ts";
-export const GLOB_TEST = "**/*.[test|spec].?([cm])[jt]s?(x)";
+export const GLOB_TESTS = [
+  `**/__tests__/**/*.${GLOB_SRC_EXT}`,
+  `**/*.spec.${GLOB_SRC_EXT}`,
+  `**/*.test.${GLOB_SRC_EXT}`,
+  `**/*.bench.${GLOB_SRC_EXT}`,
+  `**/*.benchmark.${GLOB_SRC_EXT}`,
+];
 
 export const GLOB_STYLE = "**/*.{c,le,sc}ss";
 export const GLOB_CSS = "**/*.css";
