@@ -34,13 +34,13 @@
     "node": "^18.18.0 || >=20.0.0"
   },
   "scripts": {
-    "dev": "tsdown --watch",
-    "dev:inspector": "eslint-config-inspector --config eslint-inspector.config.ts",
+    "dev:tsdown": "tsdown --watch",
+    "dev:inspector": "eslint-config-inspector --config ./playground/eslint-inspector.config.ts --basePath playground",
     "build": "pnpm build:typegen && pnpm build:tsc && pnpm build:tsdown",
     "build:tsdown": "tsdown",
     "build:typegen": "tsx scripts/typegen.ts",
     "build:tsc": "tsc --noEmit",
-    "build:inspector": "eslint-config-inspector build --config eslint-inspector.config.ts",
+    "build:inspector": "eslint-config-inspector build --config ./playground/eslint-inspector.config.ts --basePath playground",
     "typecheck": "tsc --noEmit",
     "lint:check": "eslint .",
     "lint:fix": "eslint . --fix",
