@@ -20,7 +20,4 @@ export const chai: Config[] = [
   },
 ];
 
-export const test: Config[] = [
-  ...mocha,
-  ...chai,
-];
+export const test: Config[] = [...mocha, ...chai];

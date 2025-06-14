@@ -1,0 +1,6 @@
+node_modules/
+pnpm-lock.yaml
+dist/
+types/typegen.types
+!playground/
+.eslint-config-inspector

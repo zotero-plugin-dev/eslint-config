@@ -8,20 +8,25 @@ export const typescriptCore = tseslint.config({
   files: [GLOB_TS, GLOB_TSX],
   name: "zotero-plugin/typescript",
   rules: {
-    "@typescript-eslint/ban-ts-comment": ["error", {
-      "minimumDescriptionLength": 3,
-      "ts-expect-error": "allow-with-description",
-    }],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        minimumDescriptionLength: 3,
+        "ts-expect-error": "allow-with-description",
+      },
+    ],
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-non-null-assertion": "off",
     "@typescript-eslint/no-unsafe-function-type": "off",
-    "@typescript-eslint/no-unused-vars": ["error", {
-      argsIgnorePattern: "^_",
-      varsIgnorePattern: "^_",
-    }],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        argsIgnorePattern: "^_",
+        varsIgnorePattern: "^_",
+      },
+    ],
   } satisfies Rules,
-},
-) as Config[];
+}) as Config[];
 
 export const typescript: Config[] = [
   ...typescriptCore,

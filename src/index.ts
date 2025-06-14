@@ -21,7 +21,11 @@ export default function zotero(
   ];
 
   if (options.overrides) {
-    config.push(...Array.isArray(options.overrides) ? options.overrides : [options.overrides]);
+    config.push(
+      ...(Array.isArray(options.overrides)
+        ? options.overrides
+        : [options.overrides]),
+    );
   }
 
   return config;
