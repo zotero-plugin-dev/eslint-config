@@ -34,7 +34,7 @@
     "node": "^18.18.0 || >=20.0.0"
   },
   "scripts": {
-    "dev:tsdown": "tsdown --watch",
+    "dev:tsdown": "tsdown --watch src",
     "dev:inspector": "eslint-config-inspector --config ./playground/eslint-inspector.config.ts --basePath playground",
     "build": "pnpm build:typegen && pnpm build:tsc && pnpm build:tsdown",
     "build:tsdown": "tsdown",
