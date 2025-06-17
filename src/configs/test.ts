@@ -7,7 +7,7 @@ import { GLOB_TESTS } from "../globs.js";
 export const mocha: Config[] = [
   {
     files: GLOB_TESTS,
-    ...mochaPlugin.configs!.all,
+    ...mochaPlugin.configs!.recommended,
     name: "zotero-plugin/mocha",
   },
 ];
