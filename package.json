@@ -42,8 +42,8 @@
     "build:tsc": "tsc --noEmit",
     "build:inspector": "eslint-config-inspector build --config ./playground/eslint-inspector.config.ts --basePath playground",
     "typecheck": "tsc --noEmit",
-    "lint:check": "prettier . --check && eslint .",
-    "lint:fix": "prettier . --write %% eslint . --fix",
+    "lint:check": "prettier --check . && eslint .",
+    "lint:fix": "prettier --write . && eslint . --fix",
     "release": "bumpp --commit \"chore(release): publish v%s\"",
     "update:deps": "pnpx taze minor -w -f -l -r",
     "prepare": "husky"
@@ -74,7 +74,10 @@
     "typescript": "^5.8.3"
   },
   "lint-staged": {
-    "*": "eslint --fix"
+    "*": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "prettier": {}
 }
