@@ -21,7 +21,7 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v6
         with:
-          node-version: 24.11.0
+          node-version: 24.11.1
           cache: pnpm
       - run: pnpm install
       - run: pnpm lint:check
@@ -35,7 +35,7 @@ jobs:
       - uses: pnpm/action-setup@v4
       - uses: actions/setup-node@v6
         with:
-          node-version: 24.11.0
+          node-version: 24.11.1
           cache: pnpm
       - run: pnpm install
       - run: pnpm build
@@ -78,7 +78,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 24.11.0
+          node-version: 24.11.1
           registry-url: https://registry.npmjs.org/
           cache: pnpm
 
