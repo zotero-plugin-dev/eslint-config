@@ -11,4 +11,6 @@ jobs:
   autofix:
     uses: zotero-plugin-dev/workflows/.github/workflows/autofix.yml@main
     with:
-      command: pnpm run lint:fix
+      command: |
+        pnpm build
+        pnpm run lint:fix
