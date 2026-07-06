@@ -8,3 +8,6 @@ packages:
   - src
   - "!**/dist/**"
   - playground
+
+allowBuilds:
+  esbuild: false
