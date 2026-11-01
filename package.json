@@ -2,7 +2,7 @@
   "name": "@zotero-plugin/eslint-config",
   "type": "module",
   "version": "0.6.10",
-  "packageManager": "pnpm@11.25.0",
+  "packageManager": "pnpm@12.16.1",
   "description": "ESLint config for zotero plugin.",
   "license": "AGPL-3.0-or-later",
   "homepage": "https://github.com/zotero-plugin-dev/eslint-config#readme",
